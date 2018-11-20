@@ -12,6 +12,10 @@ def function_name():
 functions can take any number of arguments and can return any datatype
 function return type dynamic
 and function might or might not take argumnets
+
+To overload the funcitons we have to use optional arguments
+positional arguments doesn't contain any default values
+optional arguments contain default values
 """
 
 k = 10
@@ -25,6 +29,12 @@ def mul(a, b):
 def display(value=30*'*'):
     print(value)
 
+
+def method2(arg1, arg2 = 10):
+    print(arg1+arg2)
+
+def method3(arg1, arg2 ):
+    print(arg1*arg2)
 # def display():
 #     print(30*'*')
 
@@ -44,3 +54,10 @@ print(mul(10,20))
 print(f'before calling scope() k = {k}')
 scope()
 print(f'after calling scope() k = {k}')
+
+
+method2(100)
+
+method3(arg1= 10, arg2 = 'sirisha')
+
+method3(arg2= 10, arg1 = 'sirisha')
