@@ -50,6 +50,20 @@ print(int(char)) # integer 1
 
 # string to float conversion
 float_string = '12.223'
-print(f'float_string = {float_string}')
+print(f'float_string = {float_string}')pi
 print(type(float_string))
 print(float(float_string)) # flaat 12.223
+
+
+num = 32
+# oct() converts a decimal number to octal number
+print(type(oct(num)))
+print(oct(num))
+
+# hex() converts a decimal number to hex number
+print(type(hex(num)))
+print(hex(num))
+
+# bin() converts a decimal number to binary number
+print(type(bin(num)))
+print(bin(num))
